@@ -6,12 +6,17 @@ import java.util.Set;
 import javax.ws.rs.ApplicationPath;
 import javax.ws.rs.core.Application;
 
-@ApplicationPath("/")
+@ApplicationPath("/restApi")
 public class RestEasyConfig extends Application {
-    @Override
-    public Set<Class<?>> getClasses() {
-        Set<Class<?>> resources = new HashSet<>();
-        resources.add(HelloWorldResource.class);
-        return resources;	
-    }
+	
+   private Set<Object> singletons  = new HashSet<>();
+   
+   public RestEasyConfig() {
+	   this.singletons.add(new HelloWorldResource());
+   }
+   @Override
+   public Set<Object> getSingletons(){
+	   return singletons;
+   }
+	
 }
