@@ -4,15 +4,39 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 @XmlRootElement
 public class HelloWorld {
-	private String message;
+	private int id;
+	private String city,name;
 
-	public String getMessage() {
-		return message;
+	
+	public int getId() {
+		return id;
 	}
 
-	public void setMessage(String message) {
-		this.message = message;
+
+	public void setId(int id) {
+		this.id = id;
 	}
+
+
+	public String getCity() {
+		return city;
+	}
+
+
+	public void setCity(String city) {
+		this.city = city;
+	}
+
+
+	public String getName() {
+		return name;
+	}
+
+
+	public void setName(String name) {
+		this.name = name;
+	}
+
 
 	public HelloWorld() {
 		super();
