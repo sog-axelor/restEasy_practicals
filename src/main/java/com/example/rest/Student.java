@@ -6,7 +6,7 @@ import javax.xml.bind.annotation.XmlRootElement;
 
 public class Student {
 	private int id;
-	private String name,city;
+	private String fname,lname;
 	
 	public int getId() {
 		return id;
@@ -14,24 +14,24 @@ public class Student {
 	public void setId(int id) {
 		this.id = id;
 	}
-	public String getName() {
-		return name;
+	public String getFname() {
+		return fname;
 	}
-	public void setName(String name) {
-		this.name = name;
+	public void setFname(String fname) {
+		this.fname = fname;
+	}
+	public String getLname() {
+		return lname;
+	}
+	public void setLname(String lname) {
+		this.lname = lname;
+	}
+	public Student(int id, String fname, String lname) {
+		super();
+		this.id = id;
+		this.fname = fname;
+		this.lname = lname;
 	}
 	
-	public String getCity() {
-		return city;
-	}
-	public void setCity(String city) {
-		this.city = city;
-	}
-	
-
-	@Override
-	public String toString() {
-		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";
-	}
 	
 }
