@@ -1,5 +1,9 @@
 package com.example.rest;
 
+import javax.xml.bind.annotation.XmlRootElement;
+
+@XmlRootElement
+
 public class Student {
 	private int id;
 	private String name,city;
@@ -24,6 +28,7 @@ public class Student {
 		this.city = city;
 	}
 	
+
 	@Override
 	public String toString() {
 		return "Student [id=" + id + ", name=" + name + ", city=" + city + "]";

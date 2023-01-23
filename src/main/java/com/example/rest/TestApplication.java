@@ -9,7 +9,7 @@ import javax.ws.rs.core.Application;
 @ApplicationPath("/restApi")
 public class TestApplication extends Application{
 
-	private Set<Object> singletons = new HashSet<Object>();
+	private Set<Object> singletons = new HashSet<>();
 	
 	public TestApplication () {
 	this.singletons.add(new Test());

@@ -12,5 +12,8 @@ dependencies {
     implementation 'org.jboss.resteasy:resteasy-jaxrs:3.9.0.Final'
     implementation 'org.jboss.resteasy:resteasy-servlet-initializer:3.9.0.Final'
     implementation 'org.jboss.resteasy:resteasy-jackson2-provider:3.9.0.Final'
+    implementation 'org.hibernate:hibernate-core:5.6.6.Final'
+	implementation 'org.postgresql:postgresql:42.2.2'
+	
 }
 
